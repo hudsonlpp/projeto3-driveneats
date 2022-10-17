@@ -157,8 +157,9 @@ body {
     flex-direction: column;
     padding-left: 14px;
     padding-right: 14px;
-    padding-top: 18px;
-    box-sizing: border-box;
+    padding-top: 18px;  
+    position: relative;  
+
 }
 
 .caixa img{
@@ -201,7 +202,10 @@ body {
 
 .selecionado ion-icon{
     display: block;
-    color: #32B72F;;
+    color: #32B72F;
+    position: absolute;
+    bottom: 12px;
+    right: 7px;
 
 }
 
@@ -212,4 +216,7 @@ ion-icon{
 .child2{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
 }
