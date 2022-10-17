@@ -6,112 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <title>Driveneats</title>
 </head>
 <body>
 
-    <!-- cabeçalho -->
+    <div class="container"> 
 
-    <div class="header">
-        <h1>DrivenEats</h1>
-        <h2>Sua comida em 6 minutos</h2>
-    </div>
+        <!-- cabeçalho -->
 
-    <!-- pedidos -->
+        <div class="header">
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+        <!-- pedidos -->
 
-    <div class="container">     
-        <p>Primeiro, seu prato</p>
+        <div class="titulo1">Primeiro, seu prato</div>
         <div class="prato">
-            <div class="caixa">
+            <div class="caixa" onclick="borda1(this)">
                 <img src="./imagens/frango_yin_yang 1.png"/>
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,<br/> um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
+                <div class="child1">Frango Yin Yang</div>
+                <div class="descricao">Um pouco de batata,<br/> um pouco de salada</div>
+                <div class="child2">R$ 14,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/frango_yin_yang 1.png"/>
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,<br/> um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
+            <div class="caixa" onclick="borda1(this)">
+                <img src="./imagens/macarrão fettuccine.png"/>
+                <div class="child1">Fettuccine</div>
+                <div class="descricao">Massa fettuccine, com molho</div>
+                <div class="child2">R$ 30,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/frango_yin_yang 1.png"/>
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,<br/> um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
+            <div class="caixa" onclick="borda1(this)">
+                <img src="./imagens/carbonara_2.png"/>
+                <div class="child1">Carbonara</div>
+                <div class="descricao">Massa carbonara,<br/> com queijo</div>
+                <div class="child2">R$ 26,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/frango_yin_yang 1.png"/>
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,<br/> um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
+            <div class="caixa" onclick="borda1(this)">
+                <img src="./imagens/yakissoba.png"/>
+                <div class="child1">Yakissoba</div>
+                <div class="descricao">Um monte de restos<br/> com shoyo</div>
+                <div class="child2">R$ 41,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/frango_yin_yang 1.png"/>
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,<br/> um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
-            </div>
-            <div class="caixa">
-                <img src="./imagens/frango_yin_yang 1.png"/>
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,<br/> um pouco de salada</h2>
-                <h3>R$ 14,90</h3>
-            </div>
+            
         </div>
-        <p>Agora, sua bebida</p>
+        <div class="titulo2">Agora, sua bebida</div>
         <div class="bebida">
-            <div class="caixa">
-                <img src="./imagens/coquinha_gelada 1.png"/>
-                <h1>Coquinha gelada</h1>
-                <h2>Lata 350ml</h2>
-                <h3>R$ 4,90</h3>
+            <div class="caixa" onclick="borda2(this)">
+                <img src="./imagens/dolly4.png"/>
+                <div class="child1">Guaraná dolly</div>
+                <div class="descricao">O sabor brasileiro</div>
+                <div class="child2">R$ 7,10<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
+            <div class="caixa" onclick="borda2(this)">
                 <img src="./imagens/coquinha_gelada 1.png"/>
-                <h1>Coquinha gelada</h1>
-                <h2>Lata 350ml</h2>
-                <h3>R$ 4,90</h3>
+                <div class="child1">Coquinha gelada</div>
+                <div class="descricao">Lata 350ml</div>
+                <div class="child2">R$ 4,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/coquinha_gelada 1.png"/>
-                <h1>Coquinha gelada</h1>
-                <h2>Lata 350ml</h2>
-                <h3>R$ 4,90</h3>
+            <div class="caixa" onclick="borda2(this)">
+                <img src="./imagens/Grapette.png"/>
+                <div class="child1">Grapette</div>
+                <div class="descricao">Garrafa 2L</div>
+                <div class="child2">R$ 8,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
+            <div class="caixa" onclick="borda2(this)">
+                <img src="./imagens/mineirinho2.png"/>
+                <div class="child1">Mineirinho</div>
+                <div class="descricao">Garrafa 1L</div>
+                <div class="child2">R$ 5,60<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+           
         </div>
-        <p>Por fim, sua sobremesa</p>
+        <div class="titulo2">Por fim, sua sobremesa</div>
         <div class="sobremesa">
-            <div class="caixa">
+            <div class="caixa" onclick="borda3(this)">
                 <img src="./imagens/pudim 2.png"/>
-                <h1>Pudim</h1>
-                <h2>Apenas pudim</h2>
-                <h3>R$ 7,90</h3>
+                <div class="child1">Pudim</div>
+                <div class="descricao">Apenas pudim</div>
+                <div class="child2">R$ 7,90<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/pudim 2.png"/>
-                <h1>Pudim</h1>
-                <h2>Apenas pudim</h2>
-                <h3>R$ 7,90</h3>
+            <div class="caixa" onclick="borda3(this)">
+                <img src="./imagens/baixados (6).jpg"/>
+                <div class="child1">Petit gateau</div>
+                <div class="descricao">Bolo com sorvete</div>
+                <div class="child2">R$ 21,50<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
-            <div class="caixa">
-                <img src="./imagens/pudim 2.png"/>
-                <h1>Pudim</h1>
-                <h2>Apenas pudim</h2>
-                <h3>R$ 7,90</h3>
+            <div class="caixa" onclick="borda3(this)">
+                <img src="./imagens/baixados (7).jpg"/>
+                <div class="child1">Harumaki</div>
+                <div class="descricao">Sabor chocolate</div>
+                <div class="child2">R$ 13,10<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
             </div>
+            <div class="caixa" onclick="borda3(this)">
+                <img src="./imagens/pavê.png"/>
+                <div class="child1">Pavê</div>
+                <div class="descricao">É pra comer</div>
+                <div class="child2">R$ 12,15<span><ion-icon name="checkmark-circle"></ion-icon></span></div>
+            </div>
+           
         </div>
+         <!-- rodapé -->
+
+        <div class="footer">
+            <button class="botao desabilitado" onclick="enviarMensagem(this)">
+                <h1>Selecione os 3 itens<br/>
+                    para fechar o pedido</h1>
+            </button>
+        </div>
+
     </div>
 
-        <!-- rodapé -->
-
-    <div class="footer">
-        <button class="elipse">
-            <h1>Selecione os 3 itens<br/>
-                para fechar o pedido</h1>
-        </button>
-    </div>
-    <script src="scripts.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     
 </body>
 </html>

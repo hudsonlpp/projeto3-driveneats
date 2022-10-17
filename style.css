@@ -1,7 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
+
   }
+
+.container{
+    position: fixed;
+    overflow-y: scroll;
+    width: 414px;
+    height: 100%;
+    width: 100%;
+}
+
+/* cabeçalho */
 
 .header{
     background: #CF2B2B;
@@ -9,12 +20,12 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 10;
     height: 92px;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    margin-bottom: 31px;
     width: 100%;
 }
 
@@ -24,6 +35,10 @@ body {
     font-weight: 400;
     font-size: 44px;
     width: 100%;
+    margin-left: 21px;
+    margin-top: 12px;
+    margin-left: 21px;
+
 }
 
 .header h2{
@@ -32,34 +47,30 @@ body {
     font-weight: 400;
     font-size: 18px;
     width: 100%;
+    margin-left: 21px;
+    margin-bottom: 14px;
+    margin-left: 21px;
 }
 
-.container{
-    background-color: green;
-    position: relative;
-    height: 1026px;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    width: 100%;
-}
+/* rodapé */
 
 .footer{
     background-color: #FFFFFF;
     position: fixed;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 92px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.elipse{
+.botao{
     width: 364px;
     height: 61px;
-    background-color: #CBCBCB;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -67,33 +78,73 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     border: none;
-}
-
-.elipse h1{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
 }
 
+.desabilitado{
+    background-color: #CBCBCB;
+}
+
+.habilitado{
+    background-color: #32B72F;
+}
+
+.botao h1{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* pedidos */
+
 .prato{
     display: flex;
-    background-color: yellow;
     overflow: scroll;
     width: 100%;
+    padding-right: 17px;
 }
 
 .bebida{
     display: flex;
     overflow: scroll;
     width: 100%;
+    padding-right: 17px;
 }
 
 .sobremesa{
     display: flex;
     overflow: scroll;
     width: 100%;
+    padding-right: 17px;
+    margin-bottom: 108px;
 }
+
+
+.titulo1{
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 123px;
+    margin-bottom: 17px;
+    margin-left: 19px;
+
+}
+
+.titulo2{
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 27px;
+    margin-bottom: 17px;
+    margin-left: 19px;
+}
+
+/* layout das caixas brancas */
+
 
 .caixa{
     background: #FFFFFF;
@@ -101,16 +152,64 @@ body {
     border-radius: 9px;
     width: 172px;
     height: 216px;
-    margin: 17px;
+    margin-left: 17px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 18px;
+    box-sizing: border-box;
 }
 
 .caixa img{
     width: 144px;
     height: 87px;
-    padding-left: 14px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
 }
 
-.prato .caixa
+.caixa .child1{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.caixa .child2{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+}
+.caixa .descricao{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 13px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* borda verde e ícone */
+
+
+.selecionado{
+    border: 3px solid #32B72F;
+}
+
+.selecionado ion-icon{
+    display: block;
+    color: #32B72F;;
+
+}
+
+ion-icon{
+    display: none;
+}
+
+.child2{
+    display: flex;
+    justify-content: space-between;
+}
