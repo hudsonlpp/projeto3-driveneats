@@ -63,7 +63,6 @@ function enviarMensagem(zap){
     const numeroP = Number(compras.valorP.replace("R$ ","").replace (",","."));
     const numeroB = Number(compras.valorB.replace("R$ ","").replace (",","."));
     const numeroS = Number(compras.valorS.replace("R$ ","").replace (",","."));
-    alert(numeroP)
     const total = (numeroP+numeroB+numeroS).toFixed(2).replace (".",",");
 
     const cliente = prompt("informe por favor o seu nome")
